@@ -1,0 +1,186 @@
+KIC 2306756
+16.442844284428443 d
+
+KIC 2306756
+245.00840084008397 d
+
+KIC 10987985
+Seismology(ID: KIC 10987985) - computed values:
+ * numax: 2265.00 uHz (method: ACF2D)
+ * deltanu: 137.03 uHz (method: ACF2D)
+ * mass: 0.30 solMass (method: Uncorrected Scaling Relations)
+ * radius: 0.66 solRad (method: Uncorrected Scaling Relations)
+ * logg: 4.27 dex (method: Uncorrected Scaling Relations)
+
+KIC 10987985
+10.584558455845585 d
+
+KIC 11018648
+Seismology(ID: KIC 11018648) - computed values:
+ * numax: 2355.00 uHz (method: ACF2D)
+ * deltanu: 105.23 uHz (method: ACF2D)
+ * mass: 1.15 solMass (method: Uncorrected Scaling Relations)
+ * radius: 1.24 solRad (method: Uncorrected Scaling Relations)
+ * logg: 4.31 dex (method: Uncorrected Scaling Relations)
+
+KIC 11018648
+Seismology(ID: KIC 11018648) - computed values:
+ * numax: 2355.00 uHz (method: ACF2D)
+ * deltanu: 105.23 uHz (method: ACF2D)
+ * mass: 1.15 solMass (method: Uncorrected Scaling Relations)
+ * radius: 1.24 solRad (method: Uncorrected Scaling Relations)
+ * logg: 4.31 dex (method: Uncorrected Scaling Relations)
+
+KIC 11018648
+16.313631363136317 d
+
+KIC 11018648
+91.78547854785478 d
+
+KIC 11152159
+5.402740274027403 d
+
+KIC 11152159
+10.808180818081809 d
+
+KIC 11242721
+19.65036503650365 d
+
+KIC 12366084
+4.4317431743174325 d
+
+KIC 12366084
+202.007900790079 d
+
+KIC 12404086
+13.197319731973197 d
+
+KIC 12404086
+132.33393339333932 d
+
+KIC 8395660
+Seismology(ID: KIC 8395660) - computed values:
+ * numax: 2235.00 uHz (method: ACF2D)
+ * deltanu: 87.47 uHz (method: ACF2D)
+ * mass: 2.20 solMass (method: Uncorrected Scaling Relations)
+ * radius: 1.74 solRad (method: Uncorrected Scaling Relations)
+ * logg: 4.30 dex (method: Uncorrected Scaling Relations)
+
+KIC 11754553
+11.973597359735972 d
+
+KIC 11812062
+3.7286728672867286 d
+
+KIC 11812062
+93.22082208220822 d
+
+KIC 11818800
+Seismology(ID: KIC 11818800) - computed values:
+ * numax: 2265.00 uHz (method: ACF2D)
+ * deltanu: 141.15 uHz (method: ACF2D)
+ * mass: 0.30 solMass (method: Uncorrected Scaling Relations)
+ * radius: 0.65 solRad (method: Uncorrected Scaling Relations)
+ * logg: 4.29 dex (method: Uncorrected Scaling Relations)
+
+KIC 11818800
+Seismology(ID: KIC 11818800) - computed values:
+ * numax: 2265.00 uHz (method: ACF2D)
+ * deltanu: 141.15 uHz (method: ACF2D)
+ * mass: 0.30 solMass (method: Uncorrected Scaling Relations)
+ * radius: 0.65 solRad (method: Uncorrected Scaling Relations)
+ * logg: 4.29 dex (method: Uncorrected Scaling Relations)
+
+KIC 11818800
+Seismology(ID: KIC 11818800) - computed values:
+ * numax: 2265.00 uHz (method: ACF2D)
+ * deltanu: 141.15 uHz (method: ACF2D)
+ * mass: 0.30 solMass (method: Uncorrected Scaling Relations)
+ * radius: 0.65 solRad (method: Uncorrected Scaling Relations)
+ * logg: 4.29 dex (method: Uncorrected Scaling Relations)
+
+KIC 11818800
+11.831083108310832 d
+
+KIC 11853255
+4.486848684868487 d
+
+KIC 11853255
+177.24822482248226 d
+
+KIC 11909839
+Seismology(ID: KIC 11909839) - computed values:
+ * numax: 2265.00 uHz (method: ACF2D)
+ * deltanu: 86.76 uHz (method: ACF2D)
+ * mass: 2.30 solMass (method: Uncorrected Scaling Relations)
+ * radius: 1.77 solRad (method: Uncorrected Scaling Relations)
+ * logg: 4.30 dex (method: Uncorrected Scaling Relations)
+
+KIC 11909839
+10.405940594059407 d
+
+KIC 11909839
+167.6194619461946 d
+
+KIC 11918099
+Seismology(ID: KIC 11918099) - computed values:
+ * numax: 2565.00 uHz (method: ACF2D)
+ * deltanu: 118.48 uHz (method: ACF2D)
+ * mass: 0.78 solMass (method: Uncorrected Scaling Relations)
+ * radius: 1.00 solRad (method: Uncorrected Scaling Relations)
+ * logg: 4.33 dex (method: Uncorrected Scaling Relations)
+
+KIC 11918099
+4.674967496749675 d
+
+KIC 11918099
+46.75157515751575 d
+
+KIC 11960862
+6.575157515751576 d
+
+KIC 11960862
+32.87658765876587 d
+
+KIC 12020329
+Seismology(ID: KIC 12020329) - computed values:
+ * numax: 2265.00 uHz (method: ACF2D)
+ * deltanu: 91.10 uHz (method: ACF2D)
+ * mass: 1.76 solMass (method: Uncorrected Scaling Relations)
+ * radius: 1.57 solRad (method: Uncorrected Scaling Relations)
+ * logg: 4.29 dex (method: Uncorrected Scaling Relations)
+
+KIC 12020329
+7.274427442744274 d
+
+KIC 12020329
+36.375237523752375 d
+
+KIC 12066335
+11.66006600660066 d
+
+KIC 12070811
+12.393539353935395 d
+
+KIC 12070811
+192.19971997199718 d
+
+KIC 8395660
+Seismology(ID: KIC 8395660) - computed values:
+ * numax: 2235.00 uHz (method: ACF2D)
+ * deltanu: 87.47 uHz (method: ACF2D)
+ * mass: 2.20 solMass (method: Uncorrected Scaling Relations)
+ * radius: 1.74 solRad (method: Uncorrected Scaling Relations)
+ * logg: 4.30 dex (method: Uncorrected Scaling Relations)
+
+KIC 8395660
+13.571657165716573 d
+
+KIC 8395660
+43.85098509850985 d
+
+KIC 3120431
+1.670767076707671 d
+
+KIC 3120431
+153.47534753475347 d
