@@ -13,27 +13,6 @@ from progress.spinner import MoonSpinner
 import tqdm
 
 
-"""try:
-    searchbox_result = re.match("^.*(?=(\())", searchbox).group()
-except AttributeError:
-    searchbox_result = re.match("^.*(?=(\())", searchbox)"""
-
-"""searchbox = driver.find_element_by_class_name("searchbox")
-searchbox_result = re.match(r"^.*(?=(\())", searchbox).group()"""
-""" 
-if searchbox_result is None:
-    return None        # or pass
-else:
-    do...something"""
-
-
- 
-
-"""bar = progressbar.ProgressBar(max_value=progressbar.UnknownLength)
-for i in range(20):
-    time.sleep(0.1)
-    bar.update(i)"""
-
 while True:
     #öppnar txt fil med allla KIC ids
     with open('kepler.txt') as f:
@@ -144,7 +123,7 @@ while True:
     ax = masked_lc.scatter();
     lc[planet_b_mask].scatter(ax=ax, c='r', label='Masked');
 
-    plt.savefig(f"newdir/astrobild{15}")
+    plt.savefig(f"newdir/astrobild{16}")
 
     planet_b_model = bls.get_transit_model(period=pla_x_period,
                                         transit_time=pla_x_t0,
@@ -157,9 +136,7 @@ while True:
   
     
 
-    """number = 4
-    bls.plot()
-    plt.savefig(f"newdir/astrobild{number}")"""
+
 
     #planet 2 sökning, ändrade parametrar
     period = np.linspace(1, 300, 10000)
@@ -248,17 +225,3 @@ while True:
 
 
 
-"""bls.plot()
-plt.savefig(f"newdir/astrobild{number}")"""
-
-
-
-    
-"""
-    with open("k2.txt", "r+") as f:
-        d = f.readlines()
-        f.seek(0)
-        for i in d:
-            if i != first_line:
-                f.write(i)
-        f.truncate();"""

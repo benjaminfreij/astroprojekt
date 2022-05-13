@@ -11,18 +11,18 @@ import os
 
 
 
-def show_image(imagefile):
+def show_image(imagefile): #funktion för att visa bilderna. 
     image = ImageTk.PhotoImage(file=imagefile)
     imagebox.pack()
     imagebox.config(image=image)
     imagebox.image = image
 
 
-def restart_program():
+def restart_program(): #funktion för att starta om programmet.
     python = sys.executable
     os.execl(python, python, * sys.argv)
 
-def show_label(label_to_show):
+def show_label(label_to_show): #funktion som går igenom alla labels, och tar bort alla, och sedan lägger till labeln som har blivit inputad. 
     for label in labels:
         if label.winfo_ismapped():
             label.pack_forget()
@@ -45,8 +45,10 @@ label7=Label(root,text="KIC 11853255 \n 4.486848684868487 d \n 177.2482248224822
 label8=Label(root, text="KIC 11909839 \n Seismology(ID: KIC 11909839) - computed values: \n * numax: 2265.00 uHz (method: ACF2D) \n * deltanu: 86.76 uHz (method: ACF2D) \n * mass: 2.30 solMass (method: Uncorrected Scaling Relations) \n * radius: 1.77 solRad (method: Uncorrected Scaling Relations) \n * logg: 4.30 dex (method: Uncorrected Scaling Relations) \n KIC 11909839 \n 10.405940594059407 d \n 167.6194619461946 d", font=("Calibri 15 bold"))
 label9=Label(root,text="KIC 11918099  \n Seismology(ID: KIC 11918099) - computed values: \n * numax: 2565.00 uHz (method: ACF2D) \n * deltanu: 118.48 uHz (method: ACF2D) \n * mass: 0.78 solMass (method: Uncorrected Scaling Relations) \n * radius: 1.00 solRad (method: Uncorrected Scaling Relations) \n  * logg: 4.33 dex (method: Uncorrected Scaling Relations) \n 4.674967496749675 d \n 46.75157515751575 d", font="Calibri 15 bold")
 label10=Label(root,text="KIC 11960862 \n 6.575157515751576 d \n 32.87658765876587 d", font="Calibri 15 bold")
+label11=Label(root,text="KIC 12020329 \n Seismology(ID: KIC 12020329) - computed values: \n * numax: 2265.00 uHz (method: ACF2D) \n * deltanu: 91.10 uHz (method: ACF2D) \n * mass: 1.76 solMass (method: Uncorrected Scaling Relations) \n * radius: 1.57 solRad (method: Uncorrected Scaling Relations) \n * logg: 4.29 dex (method: Uncorrected Scaling Relations) \n 7.274427442744274 d \n 36.375237523752375 d", font=("Calibri 15 bold"))
+label12=Label(root, text="KIC 12066335 \n 11.66006600660066 d", font = "Calibri 15 bold")
 labelx=Label(root,text="Supernova Exempel", font="Calibri 15 bold")
-labels = [label0, label1, label2, label3, label4, label5, label6, label7, label8, label9, label10,labelx]
+labels = [label0, label1, label2, label3, label4, label5, label6, label7, label8, label9, label10,label11,label12,labelx]
 
 root.geometry("1920x1080+300+150")
 root.configure(bg="black")
@@ -57,19 +59,14 @@ frame.pack()
 avslutknapp = tk.Button(frame, text="Avsluta", fg="red", bg="black", command=quit)
 avslutknapp.pack(side=tk.LEFT)
 
-
-
 s1 = tk.Button(frame, text="KIC 11018648",bg="black",fg="white", command=lambda: [show_image("newdir/astrobild1.png"), show_label(label1)])
 s1.pack(side=tk.LEFT)
-
 
 s2 = tk.Button(frame, text="KIC 11242721" ,bg="black", fg="white", command=lambda: [show_image("newdir/astrobild2.png"), show_label(label2)])
 s2.pack(side=tk.LEFT)
 
-
 s3 = tk.Button(frame, text="KIC 12404086",bg="black", fg="white", command=lambda: [show_image("newdir/astrobild3.png"), show_label(label3)])
 s3.pack(side=tk.LEFT)
-
 
 s4 = tk.Button(frame, text="KIC 11754553",bg="black", fg="white", command=lambda: [show_image("newdir/astrobild4.png"), show_label(label4)])
 s4.pack(side=tk.LEFT)
@@ -92,19 +89,20 @@ s9.pack(side=tk.LEFT)
 s10 = tk.Button(frame, text="KIC 11960862",bg="black", fg="white", command=lambda: [show_image("newdir/astrobild10.png"), show_label(label10)])
 s10.pack(side=tk.LEFT)
 
+s11 = tk.Button(frame, text="KIC 12020329",bg="black", fg="white", command=lambda: [show_image("newdir/astrobild11.png"), show_label(label11)])
+s11.pack(side=tk.LEFT)
 
+s12 = tk.Button(frame, text="KIC 12066335",bg="black", fg="white", command=lambda: [show_image("newdir/astrobild12.png"), show_label(label12)])
+s12.pack(side=tk.LEFT)
 
 sx = tk.Button(frame, text="Supernova",bg="black", fg="white", command=lambda: [show_image("newdir/supernova'.png"), show_label(labelx)])
 sx.pack(side=tk.LEFT)
-
-
 
 refresh = tk.Button(frame, text="Restart", fg = "white", bg = "black", command=restart_program)
 refresh.pack(side=tk.LEFT)
 
 imagebox = tk.Label(root)
 
-
 root.mainloop()
 
 
@@ -121,103 +119,3 @@ root.mainloop()
 
 
 
-
-
-"""from tkinter import *
-from PIL import ImageTk, Image
-import os
-from tkinter import *
-from PIL import ImageTk, Image
-from tkinter import filedialog
-import os
-
-root = Tk()
-root.geometry("550x300+300+150")
-root.resizable(width=True, height=True)
-
-def openfn():
-    filename = filedialog.askopenfilename(title='open')
-    return filename
-def open_img():
-    x = openfn()
-    img = Image.open(x)
-    img = img.resize((250, 250), Image.ANTIALIAS)
-    img = ImageTk.PhotoImage(img)
-    panel = Label(root, image=img)
-    panel.image = img
-    panel.pack()
-
-btn = Button(root, text='open image', command=open_img).pack()
-
-root.mainloop()
-
-root = Tk()
-
-img = PhotoImage(file = r"newdir/astrobild1.png")
-
-button = Button(root, image=img)
-button.pack()
-
-root.mainloop()
-
-
-
-root = Tk()
-photo1 = PhotoImage(file = r"newdir/astrobild1.png")
-root.geometry("550x300+300+150")
-root.configure(bg="black")
-class PokemonClass(object):
-
-
-    def __init__(self, master):
-        frame = Frame(master)
-        frame.pack()
-
-        def open_img():
-            x = openfn()
-            img = Image.open(x)
-            img = img.resize((250, 250), Image.ANTIALIAS)
-            img = ImageTk.PhotoImage(img)
-            panel = Label(root, image=img)
-            panel.image = img
-            panel.pack()
-
-        self.väl = Label(root, text="Stjärnor: ",
-                                  bg="Black", fg="White")
-        self.väl.pack(fill=X)
-
-        self.CharButton = Button(root, text="Charmander", bg="black", fg="White")
-        self.CharButton.pack(side=LEFT, fill=X)
-        
-
-        self.SquirtButton = Button(root, text="Squirtle", bg="black", fg="White")
-        self.SquirtButton.pack(side=LEFT, fill=X)
-
-        self.BulbButton = Button(root, text="Bulbasaur", bg="black",
-                                 fg="White")
-        self.BulbButton.pack(side=LEFT, fill=X)
-
-        self.NyknappButton = Button(root, text = 'Click Me !', bg="black", fg="White", image = photo1)
-        self.NyknappButton.pack(side=LEFT, fill=X)
-
-        
-k = PokemonClass(root)
-
-
-
-root.mainloop()
-
-
-master = Tk()
-
-def callback():
-    global buttonClicked
-    buttonClicked = not buttonClicked 
-
-
-buttonClicked  = False # Bfore first click
-
-b = Button(master, text="Smth", command=callback)
-b.pack()
-
-mainloop()"""

@@ -184,3 +184,17 @@ KIC 3120431
 
 KIC 3120431
 153.47534753475347 d
+
+KIC 3342970
+Seismology(ID: KIC 3342970) - computed values:
+ * numax: 2165.00 uHz (method: ACF2D)
+ * deltanu: 112.90 uHz (method: ACF2D)
+ * mass: 0.78 solMass (method: Uncorrected Scaling Relations)
+ * radius: 1.04 solRad (method: Uncorrected Scaling Relations)
+ * logg: 4.30 dex (method: Uncorrected Scaling Relations)
+
+KIC 3342970
+7.211721172117212 d
+
+KIC 3342970
+21.692869286928694 d
